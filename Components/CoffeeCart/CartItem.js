@@ -18,7 +18,7 @@ class CartItem extends Component {
           <Text style={{ color: "white" }}>{item.quantity}</Text>
         </Body>
         <Right>
-          <Button transparent>
+          <Button transparent onPress={() => this.props.handelPressremov(item)}>
             <Icon name="trash" style={{ color: "white", fontSize: 21 }} />
           </Button>
         </Right>
